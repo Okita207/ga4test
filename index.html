@@ -34,13 +34,22 @@
     <p>このページにアクセスすると、GTM経由でGA4に記録されます。</p>
 
     <button
-      onclick="console.log(1);dataLayer.push({
+      onclick="dataLayer.push({
     event: 'demo_button_click',
     category: 'デモ',
     label: 'ボタンクリック'
   });"
     >
       ボタンをクリック
+    </button>
+    <button
+      onclick="dataLayer.push({
+    event: 'demo_button_click2',
+    category: 'デモ',
+    label: 'ボタンクリック'
+  });"
+    >
+      ボタンをクリック2
     </button>
   </body>
 </html>
