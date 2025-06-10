@@ -1,55 +1,124 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>GTM経由のGA4デモサイト</title>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        w[l].push({"gtm.start": new Date().getTime(), event: "gtm.js"});
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
+          dl = l != "dataLayer"
+            ? "&l=" + l
+            : "";
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
+        f
+          .parentNode
+          .insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-KVGFN78T");
     </script>
     <!-- End Google Tag Manager -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-KVGFN78T"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+    <noscript >
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVGFN78T" height="0" width="0" style="display: none; visibility: hidden"></iframe >
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <h1>Googleタグマネージャー 経由のGA4デモ</h1>
     <p>このページにアクセスすると、GTM経由でGA4に記録されます。</p>
 
-    <button
-      onclick="dataLayer.push({
+    <button onclick="dataLayer.push({
     event: 'demo_button_click',
     category: 'デモ',
     label: 'ボタンクリック'
-  });"
-    >
+  });">
       ボタンをクリック
     </button>
-    <button
-      onclick="dataLayer.push({
-    event: 'demo_button_click2',
+    <br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_jo',
     category: 'デモ2',
     label: 'ボタンクリック2'
-  });"
-    >
-      ボタンをクリック2
+  });">
+      ボタンをクリック_じょう
+    </button>
+    <br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_ayaya',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_あやや
+    </button>
+    <br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_okita',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_okita
+    </button>
+    <br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_kon',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_近
+    </button><br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_rin',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_林
+    </button><br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_kimi',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_君
+    </button><br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_choki',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_ちょっきー
+    </button><br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_kurupan',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_くるぱん
+    </button><br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_foo',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_ふぅ
+    </button><br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_yagi',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_やぎ
+    </button><br>
+    <button onclick="dataLayer.push({
+    event: 'demo_button_so',
+    category: 'デモ2',
+    label: 'ボタンクリック2'
+  });">
+      ボタンをクリック_そう
     </button>
   </body>
 </html>
