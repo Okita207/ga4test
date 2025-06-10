@@ -30,7 +30,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <h1>Googleタグマネージャー 経由のGA4デモ</h1>
-    <p>このページにアクセスすると、GTM経由でGA4に記録されます。</p>
+    <p>このページにアクセスすると、GTM経由でGA4に記録されます。<br>また、下のボタンを押下すると個別のカスタムイベントが連携されます。</p>
 
     <button onclick="dataLayer.push({
     event: 'demo_button_click',
@@ -121,4 +121,12 @@
       ボタンをクリック_そう
     </button>
   </body>
+  <style>
+    button {
+      margin-top: 16px;
+      margin-left: 16px;
+      width: 200px;
+      height: 30px;
+    }
+  </style>
 </html>
